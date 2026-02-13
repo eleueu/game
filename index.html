@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Memory Card Game - Coursme -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Memory Card Game - Композиторы</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul class="cards">
+        <!-- Пара 1: Иоганн Себастьян Бах -->
+        <li class="card" data-person="bach" data-type="photo">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-1.png" alt="Иоганн Себастьян Бах">
+          </div>
+        </li>
+        <li class="card" data-person="bach" data-type="name">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view name-card">
+            <p class="composer-name">Иоганн Себастьян Бах</p>
+            <p class="composer-years">1685 — 1750</p>
+            <p class="composer-desc">немецкий композитор и органист</p>
+          </div>
+        </li>
+        
+        <!-- Пара 2: Пётр Ильич Чайковский -->
+        <li class="card" data-person="tchaikovsky" data-type="photo">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-2.png" alt="Пётр Ильич Чайковский">
+          </div>
+        </li>
+        <li class="card" data-person="tchaikovsky" data-type="name">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view name-card">
+            <p class="composer-name">Пётр Ильич Чайковский</p>
+            <p class="composer-years">1840 — 1893</p>
+            <p class="composer-desc">русский композитор, педагог, дирижёр</p>
+          </div>
+        </li>
+        
+        <!-- Пара 3: Клод Дебюсси -->
+        <li class="card" data-person="debussy" data-type="photo">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-3.png" alt="Клод Дебюсси">
+          </div>
+        </li>
+        <li class="card" data-person="debussy" data-type="name">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view name-card">
+            <p class="composer-name">Клод Дебюсси</p>
+            <p class="composer-years">1862 — 1918</p>
+            <p class="composer-desc">французский композитор</p>
+          </div>
+        </li>
+        
+        <!-- Пара 4: Ференц Лист -->
+        <li class="card" data-person="liszt" data-type="photo">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-4.png" alt="Ференц Лист">
+          </div>
+        </li>
+        <li class="card" data-person="liszt" data-type="name">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view name-card">
+            <p class="composer-name">Ференц Лист</p>
+            <p class="composer-years">1811 — 1886</p>
+            <p class="composer-desc">венгро-немецкий композитор, пианист-виртуоз</p>
+          </div>
+        </li>
+        
+        <!-- Пара 5: Александр Николаевич Скрябин -->
+        <li class="card" data-person="scriabin" data-type="photo">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-5.png" alt="Александр Николаевич Скрябин">
+          </div>
+        </li>
+        <li class="card" data-person="scriabin" data-type="name">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view name-card">
+            <p class="composer-name">Александр Николаевич Скрябин</p>
+            <p class="composer-years">1872 — 1915</p>
+            <p class="composer-desc">русский композитор и пианист</p>
+          </div>
+        </li>
+        
+        <!-- Пара 6: Николай Андреевич Римский-Корсаков -->
+        <li class="card" data-person="rimsky" data-type="photo">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/img-6.png" alt="Николай Андреевич Римский-Корсаков">
+          </div>
+        </li>
+        <li class="card" data-person="rimsky" data-type="name">
+          <div class="view front-view">
+            <img src="images/que_icon.svg" alt="icon">
+          </div>
+          <div class="view back-view name-card">
+            <p class="composer-name">Николай Андреевич Римский-Корсаков</p>
+            <p class="composer-years">1844 — 1908</p>
+            <p class="composer-desc">русский композитор, педагог, дирижёр</p>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="details">
+        <p class="moves">Шаги: <span id="moves-count">0</span></p>
+        <button id="refresh-btn">Новая игра</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
